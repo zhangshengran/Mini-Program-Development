@@ -1,7 +1,11 @@
 var xml2js = require('xml2js');
 var express = require('express');
+var bodyParser = require('body-parser')
+app.use(bodyParser.json())
 var app = express();
 app.post('/wx/talk', (req, res) => {
+
+    console.log(`中间件解析`+res.body)
     var xml = ''
     var json = null
     req.on('data', (chunk) => {
