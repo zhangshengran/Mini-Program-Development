@@ -26,7 +26,7 @@ get.then((token)=>{
 
 }
 
-// upload('./images/20190318110443.jpg')
+// upload('./images/26033802.jpg')
 
 // 文件下载
 //media_id微信服务器上的图片id，target下载的目标位置 例target : './test222.jpg'
@@ -56,7 +56,7 @@ get.then((token)=>{
     });
 })
 }
-download('TVWrta-NNjRhQFXVYggyHGLaxeqeGE1lQb41_2pGi5Q','images/fff.jpg')
+download('TVWrta-NNjRhQFXVYggyHNgZH1tmcGx_EyvDS9CD_m4','images/从服务器下载.jpg')
 
 
 // get.then(token => {

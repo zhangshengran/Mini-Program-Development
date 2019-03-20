@@ -18,7 +18,7 @@ let url = `https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&
             let x = JSON.parse(data);
             var now2 = new Date().getTime()/1000;
             let timeout = now2-x.now;
-            if(err || timeout>7200 ){
+            if(err || timeout>3600 ){
                     axios.get(url).then(({data:{access_token}})=>{
                         var now = new Date().getTime()/1000;
                         var d = JSON.stringify({access_token:access_token,now:now})
